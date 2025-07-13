@@ -30,7 +30,7 @@
 }
 
 .quantity-btn-decrement-icon {
-  background-image: url('assets/images/icon-decrement-quantity.svg');
+  background-image: url('public/assets/images/icon-decrement-quantity.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-red);
@@ -38,7 +38,7 @@
 }
 
 .quantity-btn-increment-icon {
-  background-image: url('assets/images/icon-increment-quantity.svg');
+  background-image: url('public/assets/images/icon-increment-quantity.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-red);
@@ -46,12 +46,12 @@
 }
 
 .quantity-btn-decrement-icon:hover {
-  background-image: url('assets/images/icon-decrement-quantity-hover.svg');
+  background-image: url('public/assets/images/icon-decrement-quantity-hover.svg');
   background-color: #fff;
 }
 
 .quantity-btn-increment-icon:hover {
-  background-image: url('assets/images/icon-increment-quantity-hover.svg');
+  background-image: url('public/assets/images/icon-increment-quantity-hover.svg');
   background-color: #fff;
 }
 
