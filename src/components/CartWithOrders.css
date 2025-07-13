@@ -1,0 +1,123 @@
+.cart-detais-with-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-rose-100);
+  padding-bottom: 1rem;
+}
+
+.cart-item-menu {
+  color: var(--color-rose-900);
+  font-weight: 600;
+  padding-bottom: 0.3rem;
+}
+
+.cart-item-price {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-quantity {
+  color: var(--color-red);
+  font-weight: 600;
+  margin-right: 0.8rem;
+}
+
+.cart-item-price {
+  color: var(--color-rose-300);
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.cart-item-price-at {
+  padding-right: 0.3rem;
+}
+
+.cart-item-subtotal {
+  color: var(--color-rose-400);
+  font-weight: 600;
+}
+
+.cart-item-remove {
+  border: 1px solid var(--color-rose-400);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-image: url('assets/images/icon-remove-item.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.2s ease-in, border 0.2s ease-in;
+}
+
+.cart-item-remove:hover {
+  background-image: url('assets/images/icon-remove-item-hover.svg');
+  border: 1px solid var(--color-rose-900);
+}
+
+.cart-item-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--color-rose-900);
+  font-weight: 600;
+}
+
+.cart-item-total-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.carbon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-rose-100);
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+.carbon-icon {
+  width: 24px;
+}
+
+.carbon-description {
+  color: var(--color-rose-900);
+  font-size: 0.9rem;
+}
+
+.cart-confirm-btn {
+  color: #fff;
+  background-color: var(--color-red);
+  border: none;
+  border-radius: 40px;
+  padding: 0.8rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: background-color 0.2s ease-in;
+}
+
+.cart-confirm-btn:hover {
+  background-color: darkred;
+}
+
+@media (min-width: 45em) {
+  .carbon-wrapper {
+    padding-inline: 1rem;
+    font-size: clamp(0.3rem, 1vw, 1rem);
+  }
+}
+
+@media (min-width: 45em) {
+  .cart-item-remove {
+    width: 14px;
+    height: 14px;
+  }
+}

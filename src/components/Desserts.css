@@ -1,0 +1,27 @@
+.main-title {
+  margin: 0.5rem 0 1.5rem 0;
+  color: var(--color-rose-900);
+}
+
+.dessert-card {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 35em) {
+  .dessert-card-wrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 45em) {
+  .dessert-wrapper {
+    flex: 2.5;
+  }
+
+  .dessert-card-wrapper {
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

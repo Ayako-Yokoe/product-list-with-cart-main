@@ -1,0 +1,21 @@
+.app-wrapper {
+  background-color: var(--color-rose-50);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 35em) {
+  .app-wrapper {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 45em) {
+  .app-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 3rem 0;
+    padding-inline: clamp(3rem, 5vw, 6rem);
+  }
+}

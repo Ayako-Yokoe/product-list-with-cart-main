@@ -1,0 +1,67 @@
+.quantity-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 40px;
+  white-space: nowrap;
+  position: absolute;
+  bottom: -1.25rem;
+  left: 50%;
+  translate: -50%;
+  width: 100%;
+  max-width: 160px;
+  font-size: 0.9rem;
+}
+
+.quantity-btn {
+  border: 1px solid var(--color-red);
+  background-color: var(--color-red);
+  padding: 0.5rem 0.7rem;
+}
+
+.quantity-btn-decrement-icon,
+.quantity-btn-increment-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.quantity-btn-decrement-icon {
+  background-image: url('assets/images/icon-decrement-quantity.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-red);
+  transition: background-color 0.3s ease-in, background-image 0.3s ease-in;
+}
+
+.quantity-btn-increment-icon {
+  background-image: url('assets/images/icon-increment-quantity.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-red);
+  transition: background-color 0.3s ease-in, background-image 0.3s ease-in;
+}
+
+.quantity-btn-decrement-icon:hover {
+  background-image: url('assets/images/icon-decrement-quantity-hover.svg');
+  background-color: #fff;
+}
+
+.quantity-btn-increment-icon:hover {
+  background-image: url('assets/images/icon-increment-quantity-hover.svg');
+  background-color: #fff;
+}
+
+.quantity-btn-quantity {
+  color: #fff;
+  margin: 0 2.5rem;
+}
+
+@media (min-width: 45em) and (max-width: 56em) {
+  .quantity-btn-quantity {
+    margin-inline: clamp(1rem, 2vw, 1.5rem);
+  }
+}
