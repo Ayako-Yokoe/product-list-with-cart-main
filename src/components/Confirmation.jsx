@@ -49,6 +49,7 @@ const Confirmation = ({ isConfirm, setIsConfirm }) => {
         </div>
 
         <button
+          type='button'
          className='start-new-order-btn'
          onClick={() => {
           dispatch({ type: 'clear' })
